@@ -19,7 +19,7 @@ const reverseString = (toReverse) => {
  */
 function secretSolution(a = '') { if (typeof a !== 'string') throw new TypeError('toReverse is not a string'); return a.split('').reverse().join(''); }
 
-for (const solution of [secretSolution, reverseString]) {
+for (const solution of reverseString) {
   // the main test suite for the function
   describe(`${solution.name}: reverses a string`, () => {
     it('default parameter is an empty string -> ""', () => {
