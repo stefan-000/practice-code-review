@@ -1,5 +1,5 @@
 /**
- * reverses a string
+ * reverses-a-string
  * @param {string} [toReverse] - the string to reverse
  * @returns {string} the reversed argument, or an empty string if undefined
  */
@@ -57,4 +57,4 @@ for (const solution of [secretSolution, reverseString]) {
 /**
  *
  */
-function secretSolution(a = '') { if ("string" != typeof a) throw new TypeError("toReverse is not a string"); return a.split("").reverse().join("") }
+function secretSolution(a = '') { if (typeof a != 'string') throw new TypeError('toReverse is not a string'); return a.split('').reverse().join(''); }
